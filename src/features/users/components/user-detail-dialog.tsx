@@ -33,18 +33,18 @@ export function UserDetailDialog({
             {user.company?.title ?? 'Individual Contributor'}
           </DialogDescription>
         </DialogHeader>
-        <div className="grid gap-3 rounded-lg border border-slate-200 p-4 text-sm">
+        <div className="grid gap-3 rounded-lg border border-border p-4 text-sm">
           <p>
-            <span className="font-semibold text-slate-900">Email:</span> {user.email}
+            <span className="font-semibold">Email:</span> {user.email}
           </p>
           <p>
-            <span className="font-semibold text-slate-900">Phone:</span> {user.phone}
+            <span className="font-semibold">Phone:</span> {user.phone}
           </p>
           <p>
-            <span className="font-semibold text-slate-900">Age:</span> {user.age}
+            <span className="font-semibold">Age:</span> {user.age}
           </p>
           <p>
-            <span className="font-semibold text-slate-900">Location:</span>{' '}
+            <span className="font-semibold">Location:</span>{' '}
             {user.address?.city ?? '-'}, {user.address?.state ?? '-'}
           </p>
         </div>
